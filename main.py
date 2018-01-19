@@ -1,6 +1,6 @@
 import pygame
 from pygame.locals import *
-from lib.render_text import *
+from lib.render import *
 
 
 text_on_screen = "Hello world" #tekst som skal vises på skjermen
