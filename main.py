@@ -3,16 +3,7 @@ from pygame.locals import *
 from lib.render import *
 
 
-text_on_screen = """
-	Velkommen til Romskjekk på SKAP! \n
-	Dette spillet går ut på at du skal huske oppgavene på romsjekk, \n
-	og ikke minst gjøre dem.\n\n
-
-	Hvis du ikke greier å gjøre alle oppgavene før romsjekken klokken 15:00\n
-	taper du spillet og kan ikke fortsette...\n\n
-
-	Lykke til!
-""" #tekst som skal vises på skjermen
+text_on_screen = """Velkommen til Romskjekk på SKAP!<br>Dette spillet går ut på at du skal huske oppgavene på romsjekk,<br>og ikke minst gjøre dem.<br><br>Hvis du ikke greier å gjøre alle oppgavene før romsjekken klokken 15:00<br>taper du spillet og kan ikke fortsette...<br><br>Lykke til!""" #tekst som skal vises på skjermen
 
 
 class App(): #klassen til vinduet som spillet foregår i
@@ -41,7 +32,7 @@ class App(): #klassen til vinduet som spillet foregår i
 
 	def on_loop(self):
 		self.clock.tick(30)
-		renderer.render_text(self, text_on_screen, True)
+		renderer.render_text(self, text_on_screen, False)
 
 
 	def on_cleanup(self):
